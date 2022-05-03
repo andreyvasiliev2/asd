@@ -8,10 +8,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    var arrayCountrues = ["Russia", "GERMANY", "FRENCH", "USA","Васильев", "Балданов"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -28,10 +27,10 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return arrayCountrues.count
+    
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
@@ -39,8 +38,29 @@ class TableViewController: UITableViewController {
 
         return cell
     }
-    */
-
+        @IBAction func addNewCityAction(_ sender: Any) {
+            
+            let alert = UIAlertController(title: "Add new country", message: "Enter name new country", preferredStyle: .alert)
+            
+            self.present(alert, animated: true, completion: nil)
+            alert.addTextField { (textField) in textField.placeholder = "Example: Russia"
+            }
+            
+            let addAction = UIAlertAction(title: "Add", style: .default) { (actionAdd) in
+                let country = alert.textFields![0].text!
+                self.arrayCountries.append(country)
+            }
+            
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(addAction)
+            
+            alert.addAction(cancelAction)
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            self.tableView.reloadData()
+        }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -86,4 +106,4 @@ class TableViewController: UITableViewController {
     }
     */
 
-}
+
