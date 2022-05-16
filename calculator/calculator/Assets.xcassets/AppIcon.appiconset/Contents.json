@@ -13,7 +13,7 @@
       "size" : "20x20"
     },
     {
-      "filename" : "ic_58.png",
+      "filename" : "ic_58-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
@@ -25,7 +25,7 @@
       "size" : "29x29"
     },
     {
-      "filename" : "ic_80.png",
+      "filename" : "ic_80-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
@@ -67,19 +67,17 @@
       "size" : "29x29"
     },
     {
-      "filename" : "ic_58-1.png",
+      "filename" : "ic_58.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "ic_40-2.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "ic_80-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
@@ -90,19 +88,16 @@
       "size" : "76x76"
     },
     {
-      "filename" : "ic_152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "ic_167.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "ic_1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

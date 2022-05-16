@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  calculator
 //
-//  Created by Гость on 17.03.2022.
+//  Created by wsr2021 on 16.05.2022.
 //
 
 import UIKit
